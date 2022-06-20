@@ -4,7 +4,7 @@ import pickle
 
 #creating constructor
 app=Flask(__name__, template_folder='template', static_folder='static')
-model=pickle.load(open('D:\salary_prediction\salary\model\LR.pickle', 'rb'))
+model=pickle.load(open('LR.pickle', 'rb'))
 #print(model)
 
 @app.route('/')
